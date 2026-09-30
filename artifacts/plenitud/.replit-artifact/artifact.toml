@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Plenitud — Fisioterapia y Readaptación"
+description = "Web en español para un centro de fisioterapia y readaptación. Presenta sus servicios, enfoque de tratamiento e invita a solicitar una valoración."
+version = "1.0.0"
+id = "artifacts/plenitud"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19380
+
+[services.development]
+run = "pnpm --filter @workspace/plenitud run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/plenitud", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/plenitud/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19380"
+BASE_PATH = "/"

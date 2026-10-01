@@ -79,69 +79,69 @@
   --elevate-1: rgba(0, 0, 0, 0.03);
   --elevate-2: rgba(0, 0, 0, 0.08);
 
-  --background: red; /*replace with H S L */
+  --background: 46 38% 95%;
 
-  --foreground: red; /*replace with H S L */
+  --foreground: 187 51% 16%;
 
-  --border: red; /*replace with H S L */
+  --border: 153 16% 83%;
 
-  --card: red; /*replace with H S L */
+  --card: 43 36% 97%;
 
-  --card-foreground: red; /*replace with H S L */
+  --card-foreground: 187 51% 16%;
 
-  --card-border: red; /*replace with H S L */
+  --card-border: 153 16% 83%;
 
-  --sidebar: red; /*replace with H S L */
+  --sidebar: 46 38% 95%;
 
-  --sidebar-foreground: red; /*replace with H S L */
+  --sidebar-foreground: 187 51% 16%;
 
-  --sidebar-border: red; /*replace with H S L */
+  --sidebar-border: 153 16% 83%;
 
-  --sidebar-primary: red; /*replace with H S L */
+  --sidebar-primary: 188 60% 27%;
 
-  --sidebar-primary-foreground: red; /*replace with H S L */
+  --sidebar-primary-foreground: 45 45% 96%;
 
-  --sidebar-accent: red; /*replace with H S L */
+  --sidebar-accent: 42 28% 89%;
 
-  --sidebar-accent-foreground: red; /*replace with H S L */
+  --sidebar-accent-foreground: 187 51% 16%;
 
-  --sidebar-ring: red; /*replace with H S L */
+  --sidebar-ring: 188 48% 36%;
 
-  --popover: red; /*replace with H S L */
+  --popover: 43 36% 97%;
 
-  --popover-foreground: red; /*replace with H S L */
+  --popover-foreground: 187 51% 16%;
 
-  --popover-border: red; /*replace with H S L */
+  --popover-border: 153 16% 83%;
 
-  --primary: red; /*replace with H S L */
+  --primary: 188 60% 27%;
 
-  --primary-foreground: red; /*replace with H S L */
+  --primary-foreground: 45 45% 96%;
 
-  --secondary: red; /*replace with H S L */
+  --secondary: 42 28% 89%;
 
-  --secondary-foreground: red; /*replace with H S L */
+  --secondary-foreground: 187 51% 16%;
 
-  --muted: red; /*replace with H S L */
+  --muted: 42 28% 89%;
 
-  --muted-foreground: red; /*replace with H S L */
+  --muted-foreground: 156 12% 39%;
 
-  --accent: red; /*replace with H S L */
+  --accent: 43 64% 54%;
 
-  --accent-foreground: red; /*replace with H S L */
+  --accent-foreground: 187 51% 16%;
 
-  --destructive: red; /*replace with H S L */
+  --destructive: 2 65% 49%;
 
-  --destructive-foreground: red; /*replace with H S L */
+  --destructive-foreground: 45 45% 96%;
 
-  --input: red; /*replace with H S L */
-  --ring: red; /*replace with H S L */
-  --chart-1: red; /*replace with H S L */
-  --chart-2: red; /*replace with H S L */
-  --chart-3: red; /*replace with H S L */
-  --chart-4: red; /*replace with H S L */
-  --chart-5: red; /*replace with H S L */
+  --input: 153 16% 83%;
+  --ring: 188 48% 36%;
+  --chart-1: 188 60% 27%;
+  --chart-2: 43 64% 54%;
+  --chart-3: 82 26% 56%;
+  --chart-4: 34 58% 67%;
+  --chart-5: 193 29% 51%;
 
-  --app-font-sans: 'Inter', sans-serif;
+  --app-font-sans: 'DM Sans', sans-serif;
   --app-font-serif: Georgia, serif;
   --app-font-mono: Menlo, monospace;
   --radius: 0.5rem; /* 8px */
@@ -228,68 +228,68 @@
   --elevate-1: rgba(255, 255, 255, 0.04);
   --elevate-2: rgba(255, 255, 255, 0.09);
 
-  --background: red; /*replace with H S L */
+  --background: 155 28% 12%;
 
-  --foreground: red; /*replace with H S L */
+  --foreground: 45 34% 93%;
 
-  --border: red; /*replace with H S L */
+  --border: 153 14% 27%;
 
-  --card: red; /*replace with H S L */
+  --card: 155 24% 16%;
 
-  --card-foreground: red; /*replace with H S L */
+  --card-foreground: 45 34% 93%;
 
-  --card-border: red; /*replace with H S L */
+  --card-border: 153 14% 27%;
 
-  --sidebar: red; /*replace with H S L */
+  --sidebar: 155 28% 12%;
 
-  --sidebar-foreground: red; /*replace with H S L */
+  --sidebar-foreground: 45 34% 93%;
 
-  --sidebar-border: red; /*replace with H S L */
+  --sidebar-border: 153 14% 27%;
 
-  --sidebar-primary: red; /*replace with H S L */
+  --sidebar-primary: 45 34% 87%;
 
-  --sidebar-primary-foreground: red; /*replace with H S L */
+  --sidebar-primary-foreground: 155 28% 12%;
 
-  --sidebar-accent: red; /*replace with H S L */
+  --sidebar-accent: 155 20% 20%;
 
-  --sidebar-accent-foreground: red; /*replace with H S L */
+  --sidebar-accent-foreground: 45 34% 93%;
 
-  --sidebar-ring: red; /*replace with H S L */
+  --sidebar-ring: 153 42% 48%;
 
-  --popover: red; /*replace with H S L */
+  --popover: 155 24% 16%;
 
-  --popover-foreground: red; /*replace with H S L */
+  --popover-foreground: 45 34% 93%;
 
-  --popover-border: red; /*replace with H S L */
+  --popover-border: 153 14% 27%;
 
-  --primary: red; /*replace with H S L */
+  --primary: 45 34% 87%;
 
-  --primary-foreground: red; /*replace with H S L */
+  --primary-foreground: 155 28% 12%;
 
-  --secondary: red; /*replace with H S L */
+  --secondary: 155 20% 20%;
 
-  --secondary-foreground: red; /*replace with H S L */
+  --secondary-foreground: 45 34% 93%;
 
-  --muted: red; /*replace with H S L */
+  --muted: 155 20% 20%;
 
-  --muted-foreground: red; /*replace with H S L */
+  --muted-foreground: 153 13% 68%;
 
-  --accent: red; /*replace with H S L */
+  --accent: 43 64% 54%;
 
-  --accent-foreground: red; /*replace with H S L */
+  --accent-foreground: 187 51% 16%;
 
-  --destructive: red; /*replace with H S L */
+  --destructive: 2 65% 49%;
 
-  --destructive-foreground: red; /*replace with H S L */
+  --destructive-foreground: 45 34% 93%;
 
   /* Used as the border around inputs. Dark mode: Should be a border that is light enough to have high contrast when rendered on a --card background. More contrast than standard --border */
-  --input: red; /*replace with H S L */
-  --ring: red; /*replace with H S L */
-  --chart-1: red; /*replace with H S L */
-  --chart-2: red; /*replace with H S L */
-  --chart-3: red; /*replace with H S L */
-  --chart-4: red; /*replace with H S L */
-  --chart-5: red; /*replace with H S L */
+  --input: 153 14% 27%;
+  --ring: 153 42% 48%;
+  --chart-1: 188 60% 45%;
+  --chart-2: 43 64% 54%;
+  --chart-3: 82 26% 56%;
+  --chart-4: 34 58% 67%;
+  --chart-5: 193 29% 51%;
 
   --shadow-2xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0);
   --shadow-xs: 0px 2px 0px 0px hsl(202.8169 89.1213% 53.1373% / 0);
@@ -523,6 +523,11 @@ button { font: inherit; }
 .menu-panel { animation: menu-in .22s ease both; transform-origin: top; }
 @keyframes menu-in { from { opacity: 0; transform: translateY(-8px) scaleY(.97); } to { opacity: 1; transform: translateY(0) scaleY(1); } }
 *:focus-visible { outline: 3px solid #8d6c21; outline-offset: 4px; }
+.home-care-panel { box-shadow: 0 18px 50px rgba(32, 61, 50, .045); }
+.care-rings { animation: rings-drift 12s ease-in-out infinite alternate; }
+@keyframes rings-drift { from { transform: translate3d(0, 0, 0) rotate(-8deg); } to { transform: translate3d(-8px, 9px, 0) rotate(4deg); } }
+.whatsapp-float { color: #fbf9f2; }
+.whatsapp-float:focus-visible { outline-color: #d8ab43; }
 @media (max-width: 767px) { .page-wrap { width: min(100% - 36px, 560px); } }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }

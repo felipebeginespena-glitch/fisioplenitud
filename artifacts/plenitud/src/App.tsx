@@ -149,11 +149,15 @@ function Home() {
                 <span>N.º de colegiado · Colegio de Fisioterapeutas</span>
               </div>
             </div>
-            <div className="relative">
+            <div className="relative mx-auto w-full max-w-[500px] lg:ml-auto">
               <div className="absolute -left-4 -top-4 h-28 w-28 rounded-full bg-[#d9dfd0]" aria-hidden="true" />
-              <figure className="relative mx-auto aspect-[3/4] w-full max-w-[460px] overflow-hidden rounded-[1.5rem] bg-[#d9dfd0] lg:ml-auto">
+              <figure className="relative aspect-[4/5] w-full overflow-hidden rounded-[1.5rem] bg-[#d9dfd0]">
+                <img src="/perfil-orla.jpg" alt="El fisioterapeuta de Plenitud trabaja con un ecógrafo en consulta" loading="lazy" className="h-full w-full object-cover object-center" />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/85 to-transparent px-6 pb-5 pt-16 text-sm font-medium text-white">En consulta, trabajando con ecógrafo.</figcaption>
+              </figure>
+              <figure className="absolute bottom-5 right-5 aspect-[3/4] w-[31%] max-w-[140px] overflow-hidden rounded-[1rem] border-4 border-[#f4f1e7] bg-white shadow-[0_14px_32px_rgba(17,63,70,.22)]">
                 <img src="/perfil-graduacion.jpg" alt="Retrato del fisioterapeuta de Plenitud con la beca académica de graduación" loading="lazy" className="h-full w-full object-cover object-top" />
-                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/85 to-transparent px-6 pb-5 pt-16 text-sm font-medium text-white">Graduado en Fisioterapia por la Universidad de Cádiz.</figcaption>
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/90 to-transparent px-2 pb-2 pt-8 text-center text-[.65rem] font-medium text-white">Graduación</figcaption>
               </figure>
             </div>
           </div>
@@ -176,20 +180,16 @@ function Home() {
               <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/90 via-[#113f46]/40 to-transparent px-6 pb-5 pt-16 text-sm font-medium text-white">Readaptación deportiva en el campo de entrenamiento.</figcaption>
             </figure>
           </div>
-          <div className="mt-6 grid gap-5 md:grid-cols-[.95fr_1.05fr] md:items-stretch">
-            <article className="flex flex-col justify-center rounded-[1.4rem] bg-[#e9e8dc] p-6 md:p-8">
+          <div className="mt-6 grid gap-5 md:grid-cols-2 md:items-center">
+            <article className="rounded-[1.4rem] bg-[#e9e8dc] p-6 md:p-8">
               <p className="eyebrow text-[#778b78]">Formación de base</p>
               <h3 className="font-display mt-4 text-2xl font-semibold tracking-[-.04em]">C.D. La Unión <span className="font-editorial font-medium italic text-[#8d6c21]">· 6 años</span></h3>
               <p className="mt-3 text-sm leading-[1.8] text-[#637268]">Cuidado, educación y prevención de lesiones en jóvenes durante su etapa de formación.</p>
             </article>
-            <figure className="relative aspect-[13/11] overflow-hidden rounded-[1.4rem] bg-[#d9dfd0]">
-              <img src="/cd-la-union-atencion.jpg" alt="El fisioterapeuta atiende a una joven jugadora en el campo durante su etapa en C.D. La Unión" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
-              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/85 to-transparent px-6 pb-5 pt-16 text-sm font-medium text-white">Atención y prevención de lesiones en el campo.</figcaption>
-            </figure>
-          </div>
-          <div className="mt-7 flex flex-col gap-4 border-t border-[#113f46]/15 pt-7 md:flex-row md:items-end md:justify-between">
-            <p className="max-w-[760px] font-editorial text-[1.45rem] leading-[1.35] text-[#527061] md:text-[1.7rem]">Una visión práctica y orientada a resultados reales para deportistas y pacientes de cualquier disciplina.</p>
-            <a href="#servicios" className="text-link inline-flex shrink-0 items-center gap-2 text-sm font-semibold">Conoce nuestros servicios <ArrowRight size={15} aria-hidden="true" /></a>
+            <div className="md:pl-4">
+              <p className="font-editorial text-[1.45rem] leading-[1.35] text-[#527061] md:text-[1.7rem]">Una visión práctica y orientada a resultados reales para deportistas y pacientes de cualquier disciplina.</p>
+              <a href="#servicios" className="text-link mt-5 inline-flex items-center gap-2 text-sm font-semibold">Conoce nuestros servicios <ArrowRight size={15} aria-hidden="true" /></a>
+            </div>
           </div>
         </div>
       </section>
@@ -266,12 +266,12 @@ function Home() {
           </div>
           <div className="home-care-panel mt-16 overflow-hidden rounded-[1.5rem] border border-[#113f46]/10 md:mt-20">
             <div className="grid md:grid-cols-[.88fr_1.12fr]">
-              <div className="relative flex min-h-[420px] flex-col items-center justify-center gap-3 overflow-hidden bg-[#d9dfd0] p-5 md:min-h-[450px] md:p-6">
+              <div className="relative flex min-h-[330px] flex-col items-center justify-center gap-3 overflow-hidden bg-[#d9dfd0] p-5 md:min-h-[380px] md:p-6">
                 <div aria-hidden="true" className="care-rings absolute -right-16 -top-16 h-64 w-64 rounded-full border border-[#527061]/25"><div className="absolute inset-7 rounded-full border border-[#527061]/25" /><div className="absolute inset-14 rounded-full border border-[#527061]/25" /><div className="absolute inset-21 rounded-full border border-[#527061]/25" /></div>
-                <p className="eyebrow relative z-10 w-full max-w-[260px] text-[#527061]">En casa, a tu ritmo</p>
-                <figure className="relative z-10 w-full max-w-[260px] overflow-hidden rounded-[1.2rem] bg-[#fbf9f2] shadow-[0_16px_36px_rgba(32,61,50,.12)]">
-                  <img src="/domicilio-ejercicio.jpg" alt="Persona mayor realizando un ejercicio de fuerza con una mancuerna, acompañada por una fisioterapeuta" loading="lazy" className="block h-auto w-full" />
-                  <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/85 to-transparent px-4 pb-4 pt-12 text-xs font-medium text-white">Ejercicio de fuerza adaptado.</figcaption>
+                <p className="eyebrow relative z-10 w-full max-w-[420px] text-[#527061]">En casa, a tu ritmo</p>
+                <figure className="relative z-10 aspect-[3/2] w-full max-w-[420px] overflow-hidden rounded-[1.2rem] bg-[#fbf9f2] shadow-[0_16px_36px_rgba(32,61,50,.12)]">
+                  <img src="/gerontogimnasia.webp" alt="Mujer mayor sonriente haciendo ejercicio con dos mancuernas ligeras" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+                  <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/85 to-transparent px-4 pb-4 pt-12 text-xs font-medium text-white">Ejercicio de fuerza y movimiento.</figcaption>
                 </figure>
               </div>
               <div className="bg-[#fbf9f2] p-7 md:p-10">

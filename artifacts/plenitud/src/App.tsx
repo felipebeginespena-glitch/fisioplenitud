@@ -142,7 +142,7 @@ function Home() {
           <div className="grid gap-10 lg:grid-cols-[.72fr_1.28fr] lg:gap-20">
             <div>
               <p className="eyebrow mb-5 text-[#778b78]">01 — Sobre mí · Perfil profesional</p>
-              <h2 className="font-display max-w-[420px] text-[clamp(2.4rem,4.8vw,4.1rem)] font-semibold leading-[1.02] tracking-[-.065em]">La recuperación se hace <span className="font-editorial font-medium italic text-[#8d6c21]">en equipo.</span></h2>
+              <h2 className="font-display max-w-[420px] text-[clamp(2.4rem,4.8vw,4.1rem)] font-semibold leading-[1.02] tracking-[-.065em]">Tu recuperación, paso a paso y <span className="font-editorial font-medium italic text-[#8d6c21]">contigo</span></h2>
               <p className="mt-6 max-w-[430px] text-[1rem] leading-[1.9] text-[#637268]">Graduado en Fisioterapia por la Universidad de Cádiz (n.º de colegiado 12.814). Mi vocación es acompañar a cada paciente en su proceso de recuperación, desde el alivio del dolor hasta la readaptación completa a su día a día y a su práctica deportiva, con un enfoque riguroso y personalizado.</p>
               <div className="mt-8 inline-flex items-center gap-3 border-t border-[#113f46]/15 pt-5 text-sm text-[#526258]">
                 <span className="font-editorial text-2xl italic text-[#8d6c21]">12.814</span>

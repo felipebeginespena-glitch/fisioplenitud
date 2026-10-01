@@ -65,9 +65,10 @@ function Home() {
           </a>
 
           <nav aria-label="Navegación principal" className="hidden items-center gap-5 lg:flex">
-            <a className="text-link text-[.83rem] font-medium" href="#enfoque">Nuestro enfoque</a>
             <a className="text-link text-[.83rem] font-medium" href="#perfil">Quién soy</a>
+            <a className="text-link text-[.83rem] font-medium" href="#trayectoria">Trayectoria</a>
             <a className="text-link text-[.83rem] font-medium" href="#servicios">Servicios</a>
+            <a className="text-link text-[.83rem] font-medium" href="#enfoque">Nuestro enfoque</a>
             <a className="text-link text-[.83rem] font-medium" href="#acompanamiento">Acompañamiento</a>
             <a className="text-link text-[.83rem] font-medium" href="#preguntas">Preguntas</a>
           </nav>
@@ -81,9 +82,10 @@ function Home() {
         </div>
         {menuOpen && (
           <nav aria-label="Navegación móvil" className="menu-panel absolute inset-x-0 top-full border-b border-[#113f46]/10 bg-[#f4f1e7] px-6 pb-6 pt-3 shadow-lg lg:hidden">
-            <a onClick={closeMenu} className="block border-b border-[#113f46]/10 py-4 text-sm" href="#enfoque">Nuestro enfoque</a>
             <a onClick={closeMenu} className="block border-b border-[#113f46]/10 py-4 text-sm" href="#perfil">Quién soy</a>
+            <a onClick={closeMenu} className="block border-b border-[#113f46]/10 py-4 text-sm" href="#trayectoria">Trayectoria deportiva</a>
             <a onClick={closeMenu} className="block border-b border-[#113f46]/10 py-4 text-sm" href="#servicios">Servicios</a>
+            <a onClick={closeMenu} className="block border-b border-[#113f46]/10 py-4 text-sm" href="#enfoque">Nuestro enfoque</a>
             <a onClick={closeMenu} className="block border-b border-[#113f46]/10 py-4 text-sm" href="#acompanamiento">Acompañamiento</a>
             <a onClick={closeMenu} className="block border-b border-[#113f46]/10 py-4 text-sm" href="#preguntas">Preguntas frecuentes</a>
             <a onClick={closeMenu} className="mt-5 flex items-center justify-between rounded-full bg-[#d8ab43] px-5 py-4 text-sm font-semibold text-[#113f46]" href="#valoracion">Dar el primer paso <ArrowUpRight size={17} /></a>
@@ -105,7 +107,7 @@ function Home() {
               <a href="#valoracion" className="group inline-flex items-center gap-3 rounded-full bg-[#d8ab43] px-6 py-4 text-sm font-semibold text-[#113f46] transition duration-200 hover:-translate-y-0.5 hover:bg-[#e3ba58]">
                 Cuéntanos qué necesitas <ArrowRight size={17} className="transition-transform group-hover:translate-x-1" />
               </a>
-              <a href="#enfoque" className="text-link text-sm font-semibold">Conoce cómo trabajamos</a>
+              <a href="#perfil" className="text-link text-sm font-semibold">Conoce quién te acompaña</a>
             </div>
             <div className="mt-12 flex items-center gap-3 text-[#637268]">
               <span className="flex h-9 w-9 items-center justify-center rounded-full border border-[#113f46]/20"><MoveUpRight size={16} /></span>
@@ -135,30 +137,11 @@ function Home() {
         </div>
       </section>
 
-      <section id="enfoque" className="relative bg-[#fbf9f2] py-20 md:py-32">
-        <div className="page-wrap grid gap-12 md:grid-cols-[.72fr_1.28fr] md:gap-24">
-          <div className="pt-2">
-            <p className="eyebrow mb-5 text-[#778b78]">01 — Una mirada completa</p>
-            <p className="max-w-[255px] font-editorial text-[1.75rem] leading-[1.13] text-[#527061]">Tu historia importa tanto como el lugar que te duele.</p>
-          </div>
-          <div>
-            <h2 className="font-display max-w-[800px] text-[clamp(2.25rem,4.8vw,4.15rem)] font-semibold leading-[1.08] tracking-[-.065em]">No eres una lesión. Eres mucho más que eso.</h2>
-            <p className="mt-7 max-w-[690px] text-[1.04rem] leading-[1.9] text-[#637268]">
-              Escuchamos lo que te pasa, entendemos lo que quieres volver a hacer y construimos contigo un camino realista. Porque recuperarte no debería consistir en perseguir una cifra: debería acercarte a una vida con más movimiento y menos miedo.
-            </p>
-            <a href="#acompanamiento" className="text-link mt-8 inline-flex items-center gap-2 text-sm font-semibold">Así te acompañamos <ArrowDown size={15} /></a>
-          </div>
-        </div>
-        <div aria-hidden="true" className="pointer-events-none absolute -bottom-16 right-[8%] hidden h-36 w-36 rounded-full border border-[#d7dfce] md:block">
-          <div className="absolute inset-5 rounded-full border border-[#d7dfce]" /><div className="absolute inset-10 rounded-full border border-[#d7dfce]" />
-        </div>
-      </section>
-
-      <section id="perfil" className="relative overflow-hidden bg-[#f4f1e7] py-20 md:py-28">
+      <section id="perfil" className="relative overflow-hidden bg-[#f4f1e7] pb-12 pt-20 md:pb-16 md:pt-28">
         <div className="page-wrap">
           <div className="grid gap-10 lg:grid-cols-[.72fr_1.28fr] lg:gap-20">
             <div>
-              <p className="eyebrow mb-5 text-[#778b78]">Sobre mí · Perfil profesional</p>
+              <p className="eyebrow mb-5 text-[#778b78]">01 — Sobre mí · Perfil profesional</p>
               <h2 className="font-display max-w-[420px] text-[clamp(2.4rem,4.8vw,4.1rem)] font-semibold leading-[1.02] tracking-[-.065em]">La recuperación se hace <span className="font-editorial font-medium italic text-[#8d6c21]">en equipo.</span></h2>
               <p className="mt-6 max-w-[430px] text-[1rem] leading-[1.9] text-[#637268]">Graduado en Fisioterapia por la Universidad de Cádiz (n.º de colegiado 12.814). Mi vocación es acompañar a cada paciente en su proceso de recuperación, desde el alivio del dolor hasta la readaptación completa a su día a día y a su práctica deportiva, con un enfoque riguroso y personalizado.</p>
               <div className="mt-8 inline-flex items-center gap-3 border-t border-[#113f46]/15 pt-5 text-sm text-[#526258]">
@@ -168,34 +151,41 @@ function Home() {
             </div>
             <div className="relative">
               <div className="absolute -left-4 -top-4 h-28 w-28 rounded-full bg-[#d9dfd0]" aria-hidden="true" />
-              <figure className="relative overflow-hidden rounded-[1.5rem]">
-                <img src="/consulta-deportiva.jpg" alt="Camilla de fisioterapia en el vestuario de la A.D. Mosqueo, junto a los equipamientos del equipo" loading="lazy" className="h-[320px] w-full object-cover object-[center_57%] md:h-[420px]" />
-                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/85 to-transparent px-6 pb-5 pt-16 text-sm font-medium text-white">Fisioterapia también en el entorno donde se compite.</figcaption>
+              <figure className="relative mx-auto aspect-[4/5] w-full max-w-[460px] overflow-hidden rounded-[1.5rem] bg-[#d9dfd0] lg:ml-auto">
+                <img src="/perfil-orla.jpg" alt="El fisioterapeuta trabaja con el ecógrafo; detrás se ven la orla universitaria y su título" loading="lazy" className="h-full w-full object-cover object-top" />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/85 to-transparent px-6 pb-5 pt-16 text-sm font-medium text-white">Mi formación en Fisioterapia, presente en cada proceso.</figcaption>
               </figure>
             </div>
           </div>
+        </div>
+      </section>
 
-          <div className="mt-20 border-t border-[#113f46]/15 pt-10 md:mt-28 md:pt-14">
-            <div className="grid gap-5 md:grid-cols-[.8fr_1.2fr] md:items-end">
-              <div><p className="eyebrow mb-4 text-[#778b78]">Deporte local, trabajo diario</p><h3 className="font-display max-w-[490px] text-[clamp(2rem,4vw,3.45rem)] font-semibold leading-[1.05] tracking-[-.06em]">Siete años al lado del fútbol.</h3></div>
-              <p className="max-w-[620px] text-sm leading-[1.85] text-[#637268]">Con siete años de trayectoria en el mundo del fútbol, mi compromiso con el deporte local se fundamenta en el trabajo diario con dos entidades clave de nuestra tierra.</p>
+      <section id="trayectoria" className="bg-[#f4f1e7] pb-20 md:pb-28">
+        <div className="page-wrap border-t border-[#113f46]/15 pt-10 md:pt-14">
+          <div className="grid gap-5 md:grid-cols-[.8fr_1.2fr] md:items-end">
+            <div><p className="eyebrow mb-4 text-[#778b78]">02 — Trayectoria deportiva · Deporte local y trabajo diario</p><h2 className="font-display max-w-[490px] text-[clamp(2rem,4vw,3.45rem)] font-semibold leading-[1.05] tracking-[-.06em]">Siete años al lado del fútbol.</h2></div>
+            <p className="max-w-[620px] text-sm leading-[1.85] text-[#637268]">Con siete años de trayectoria en el mundo del fútbol, mi compromiso con el deporte local se fundamenta en el trabajo diario con dos entidades clave de nuestra tierra.</p>
+          </div>
+          <div className="mt-9 grid gap-5 md:grid-cols-2">
+            <figure className="relative aspect-[3/2] overflow-hidden rounded-[1.4rem] bg-[#d9dfd0]">
+              <img src="/ad-mosqueo-equipo.jpg" alt="Plantilla y cuerpo técnico de la A.D. Mosqueo reunidos en el campo de fútbol" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/90 via-[#113f46]/45 to-transparent px-6 pb-5 pt-20 text-sm text-white"><strong className="block text-base">A.D. Mosqueo · 7 años</strong>Trabajo en el cuerpo médico, junto al equipo y su cuerpo técnico.</figcaption>
+            </figure>
+            <figure className="relative aspect-[3/2] overflow-hidden rounded-[1.4rem] bg-[#d9dfd0]">
+              <img src="/ad-mosqueo-accion.jpg" alt="Trabajo de readaptación en el campo de la A.D. Mosqueo con un balón de pilates" loading="lazy" className="absolute inset-0 h-full w-full object-cover object-center" />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/90 via-[#113f46]/40 to-transparent px-6 pb-5 pt-16 text-sm font-medium text-white">Readaptación deportiva en el campo de entrenamiento.</figcaption>
+            </figure>
+          </div>
+          <div className="mt-6 grid gap-5 md:grid-cols-2 md:items-center">
+            <article className="rounded-[1.4rem] bg-[#e9e8dc] p-6 md:p-8">
+              <p className="eyebrow text-[#778b78]">Formación de base</p>
+              <h3 className="font-display mt-4 text-2xl font-semibold tracking-[-.04em]">C.D. La Unión <span className="font-editorial font-medium italic text-[#8d6c21]">· 6 años</span></h3>
+              <p className="mt-3 text-sm leading-[1.8] text-[#637268]">Cuidado, educación y prevención de lesiones en jóvenes durante su etapa de formación.</p>
+            </article>
+            <div className="md:pl-4">
+              <p className="font-editorial text-[1.45rem] leading-[1.35] text-[#527061] md:text-[1.7rem]">Una visión práctica y orientada a resultados reales para deportistas y pacientes de cualquier disciplina.</p>
+              <a href="#servicios" className="text-link mt-5 inline-flex items-center gap-2 text-sm font-semibold">Conoce nuestros servicios <ArrowRight size={15} aria-hidden="true" /></a>
             </div>
-            <div className="mt-9 grid gap-5 lg:grid-cols-[1.06fr_.94fr]">
-              <figure className="relative min-h-[290px] overflow-hidden rounded-[1.4rem] bg-[#d9dfd0]">
-                <img src="/ad-mosqueo-equipo.jpg" alt="Plantilla y cuerpo técnico de la A.D. Mosqueo reunidos en el campo de fútbol" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
-                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/90 via-[#113f46]/45 to-transparent px-6 pb-5 pt-20 text-sm text-white"><strong className="block text-base">A.D. Mosqueo · 7 años</strong>Integrante de su cuerpo médico, con experiencia en la exigencia de la competición y el rendimiento de los jugadores.</figcaption>
-              </figure>
-              <div className="grid gap-5 sm:grid-cols-[.85fr_1.15fr] lg:grid-cols-1">
-                <div className="flex flex-col justify-between rounded-[1.4rem] bg-[#e9e8dc] p-6 md:p-8">
-                  <div><p className="eyebrow text-[#778b78]">Formación de base</p><h4 className="font-display mt-5 text-2xl font-semibold tracking-[-.04em]">C.D. La Unión <span className="font-editorial font-medium italic text-[#8d6c21]">· 6 años</span></h4><p className="mt-4 text-sm leading-[1.8] text-[#637268]">Cuidado, educación y prevención de lesiones en jóvenes durante su etapa de formación.</p></div>
-                  <div className="mt-7 flex items-center gap-2 text-xs font-semibold uppercase tracking-[.12em] text-[#527061]"><span className="h-px w-7 bg-[#d8ab43]" />Cuidar también es enseñar</div>
-                </div>
-                <figure className="relative min-h-[190px] overflow-hidden rounded-[1.4rem] bg-[#d9dfd0]">
-                  <img src="/ad-mosqueo-accion.jpg" alt="Jugador de fútbol entrenando con balón en el campo de la A.D. Mosqueo" loading="lazy" className="absolute inset-0 h-full w-full object-cover object-center" />
-                </figure>
-              </div>
-            </div>
-            <p className="mt-7 max-w-[760px] font-editorial text-[1.45rem] leading-[1.35] text-[#527061] md:ml-[18%] md:text-[1.7rem]">Una visión práctica y orientada a resultados reales para deportistas y pacientes de cualquier disciplina.</p>
           </div>
         </div>
       </section>
@@ -204,7 +194,7 @@ function Home() {
         <div className="page-wrap">
           <div className="mb-12 flex flex-col justify-between gap-5 md:mb-16 md:flex-row md:items-end">
             <div>
-              <p className="eyebrow mb-5 text-[#778b78]">02 — En qué podemos ayudarte</p>
+              <p className="eyebrow mb-5 text-[#778b78]">03 — En qué podemos ayudarte</p>
               <h2 className="font-display max-w-[650px] text-[clamp(2.3rem,4.6vw,4.1rem)] font-semibold leading-[1.05] tracking-[-.065em]">Un punto de partida para volver a lo que te mueve.</h2>
             </div>
             <p className="max-w-[320px] pb-1 text-sm leading-[1.75] text-[#637268]">Cada proceso comienza donde estás hoy y avanza hacia lo que quieres recuperar.</p>
@@ -291,10 +281,29 @@ function Home() {
         </div>
       </section>
 
+      <section id="enfoque" className="relative bg-[#fbf9f2] py-20 md:py-32">
+        <div className="page-wrap grid gap-12 md:grid-cols-[.72fr_1.28fr] md:gap-24">
+          <div className="pt-2">
+            <p className="eyebrow mb-5 text-[#778b78]">04 — Una mirada completa</p>
+            <p className="max-w-[255px] font-editorial text-[1.75rem] leading-[1.13] text-[#527061]">Tu historia importa tanto como el lugar que te duele.</p>
+          </div>
+          <div>
+            <h2 className="font-display max-w-[800px] text-[clamp(2.25rem,4.8vw,4.15rem)] font-semibold leading-[1.08] tracking-[-.065em]">No eres una lesión. Eres mucho más que eso.</h2>
+            <p className="mt-7 max-w-[690px] text-[1.04rem] leading-[1.9] text-[#637268]">
+              Escuchamos lo que te pasa, entendemos lo que quieres volver a hacer y construimos contigo un camino realista. Porque recuperarte no debería consistir en perseguir una cifra: debería acercarte a una vida con más movimiento y menos miedo.
+            </p>
+            <a href="#acompanamiento" className="text-link mt-8 inline-flex items-center gap-2 text-sm font-semibold">Así te acompañamos <ArrowDown size={15} /></a>
+          </div>
+        </div>
+        <div aria-hidden="true" className="pointer-events-none absolute -bottom-16 right-[8%] hidden h-36 w-36 rounded-full border border-[#d7dfce] md:block">
+          <div className="absolute inset-5 rounded-full border border-[#d7dfce]" /><div className="absolute inset-10 rounded-full border border-[#d7dfce]" />
+        </div>
+      </section>
+
       <section id="acompanamiento" className="bg-[#fbf9f2] py-20 md:py-28">
         <div className="page-wrap">
           <div className="grid items-end gap-6 md:grid-cols-[1fr_.7fr]">
-            <div><p className="eyebrow mb-5 text-[#778b78]">03 — El camino se hace contigo</p><h2 className="font-display max-w-[600px] text-[clamp(2.3rem,4.6vw,4rem)] font-semibold leading-[1.05] tracking-[-.065em]">Pequeños pasos. Cambios que se sienten.</h2></div>
+            <div><p className="eyebrow mb-5 text-[#778b78]">05 — El camino se hace contigo</p><h2 className="font-display max-w-[600px] text-[clamp(2.3rem,4.6vw,4rem)] font-semibold leading-[1.05] tracking-[-.065em]">Pequeños pasos. Cambios que se sienten.</h2></div>
             <p className="max-w-[390px] text-sm leading-[1.8] text-[#637268] md:justify-self-end">No hay dos cuerpos iguales ni dos procesos idénticos. El plan se adapta a tu punto de partida y evoluciona contigo.</p>
           </div>
           <div className="mt-14 grid gap-8 border-t border-[#113f46]/15 pt-7 md:grid-cols-3 md:gap-12">
@@ -308,7 +317,7 @@ function Home() {
       <section className="relative overflow-hidden bg-[#113f46] py-20 text-[#f4f1e7] md:py-28">
         <div aria-hidden="true" className="absolute -right-24 top-1/2 h-[380px] w-[380px] -translate-y-1/2 rounded-full border border-[#f4f1e7]/10 md:right-[7%] md:h-[520px] md:w-[520px]"><div className="absolute inset-8 rounded-full border border-[#f4f1e7]/10" /><div className="absolute inset-16 rounded-full border border-[#f4f1e7]/10" /><div className="absolute inset-24 rounded-full border border-[#f4f1e7]/10" /></div>
         <div className="page-wrap relative">
-          <p className="eyebrow mb-7 text-[#c9d4bc]">04 — Tu vida, en movimiento</p>
+          <p className="eyebrow mb-7 text-[#c9d4bc]">06 — Tu vida, en movimiento</p>
           <div className="grid gap-10 md:grid-cols-[1.08fr_.72fr] md:items-end">
             <h2 className="font-display max-w-[770px] text-[clamp(2.8rem,7vw,6.1rem)] font-semibold leading-[.98] tracking-[-.075em]">Que tu mundo no se haga más pequeño.</h2>
             <div className="max-w-[390px]">
@@ -322,7 +331,7 @@ function Home() {
 
       <section id="preguntas" className="bg-[#e9e8dc] py-20 md:py-28">
         <div className="page-wrap grid gap-12 md:grid-cols-[.65fr_1.35fr] md:gap-24">
-          <div><p className="eyebrow mb-5 text-[#778b78]">05 — Antes de empezar</p><h2 className="font-display text-[clamp(2.25rem,4vw,3.5rem)] font-semibold leading-[1.05] tracking-[-.06em]">Es normal tener preguntas.</h2><p className="mt-5 max-w-[280px] text-sm leading-[1.8] text-[#637268]">Y también está bien empezar por hacerlas.</p></div>
+          <div><p className="eyebrow mb-5 text-[#778b78]">07 — Antes de empezar</p><h2 className="font-display text-[clamp(2.25rem,4vw,3.5rem)] font-semibold leading-[1.05] tracking-[-.06em]">Es normal tener preguntas.</h2><p className="mt-5 max-w-[280px] text-sm leading-[1.8] text-[#637268]">Y también está bien empezar por hacerlas.</p></div>
           <div className="divide-y divide-[#113f46]/15">
             <details className="group py-5">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-4 py-1 font-display text-base font-semibold [&::-webkit-details-marker]:hidden">¿Tengo que saber qué me pasa antes de venir?<ChevronDown size={19} className="shrink-0 text-[#527061] transition-transform group-open:rotate-180" /></summary>
@@ -347,7 +356,7 @@ function Home() {
       <section id="valoracion" className="bg-[#f4f1e7] py-20 md:py-28">
         <div className="page-wrap grid gap-12 lg:grid-cols-[.9fr_1.1fr] lg:gap-24">
           <div>
-            <p className="eyebrow mb-5 text-[#778b78]">06 — El primer paso puede ser pequeño</p>
+            <p className="eyebrow mb-5 text-[#778b78]">08 — El primer paso puede ser pequeño</p>
             <h2 className="font-display max-w-[540px] text-[clamp(2.5rem,5.4vw,4.8rem)] font-semibold leading-[1] tracking-[-.07em]">Empecemos por escucharte.</h2>
             <p className="mt-6 max-w-[390px] text-base leading-[1.8] text-[#637268]">Cuéntanos qué te gustaría recuperar. Sin compromiso, sin prisa; una conversación para saber por dónde empezar.</p>
             <p className="mt-5 max-w-[430px] text-sm leading-[1.8] text-[#637268]">¿Prefieres hablar directamente? Si tienes dudas sobre tu lesión o quieres consultar disponibilidad para nuestra nueva clínica, escríbeme directamente por WhatsApp y te responderé con total inmediatez.</p>
@@ -411,7 +420,7 @@ function Home() {
               <p className="mt-4 text-sm text-[#c9d4bc]">Fisioterapia y readaptación al movimiento.</p>
             </div>
             <nav aria-label="Enlaces del pie de página" className="flex flex-wrap gap-x-7 gap-y-3 text-xs text-[#d6dfd3]">
-              <a className="hover:text-white" href="#enfoque">Enfoque</a><a className="hover:text-white" href="#perfil">Quién soy</a><a className="hover:text-white" href="#servicios">Servicios</a><a className="hover:text-white" href="#preguntas">Preguntas</a><a className="hover:text-white" href="#valoracion">Contacto</a>
+              <a className="hover:text-white" href="#perfil">Quién soy</a><a className="hover:text-white" href="#trayectoria">Trayectoria</a><a className="hover:text-white" href="#servicios">Servicios</a><a className="hover:text-white" href="#enfoque">Enfoque</a><a className="hover:text-white" href="#preguntas">Preguntas</a><a className="hover:text-white" href="#valoracion">Contacto</a>
             </nav>
           </div>
           <div className="flex flex-col justify-between gap-3 pt-5 text-[.68rem] text-[#b9c8bc] sm:flex-row">

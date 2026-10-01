@@ -184,6 +184,17 @@ function Home() {
               <div className="absolute bottom-7 right-7 flex h-12 w-12 items-center justify-center rounded-full bg-[#d8ab43] text-[#113f46]"><MoveUpRight size={19} /></div>
             </aside>
           </div>
+          <div className="mt-16 grid items-center gap-8 border-t border-[#113f46]/15 pt-12 md:mt-20 md:grid-cols-[.8fr_1.2fr] md:gap-16 md:pt-16">
+            <div className="max-w-[430px]">
+              <p className="eyebrow mb-5 text-[#778b78]">Tecnología en consulta</p>
+              <h3 className="font-display text-[clamp(2rem,3.6vw,3.25rem)] font-semibold leading-[1.05] tracking-[-.06em]">Ecógrafo en el tratamiento de lesiones.</h3>
+              <p className="mt-5 text-sm leading-[1.8] text-[#637268]">Utilizamos el ecógrafo durante el tratamiento de lesiones, como parte del proceso de recuperación.</p>
+            </div>
+            <figure className="relative mx-auto aspect-[4/5] w-full max-w-[500px] overflow-hidden rounded-[1.5rem] bg-[#d9dfd0] md:justify-self-end">
+              <img src="/ecografo-consulta.jpg" alt="Profesional de fisioterapia utilizando el ecógrafo en consulta." loading="lazy" className="h-full w-full object-cover object-center" />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/80 via-[#113f46]/20 to-transparent px-5 pb-5 pt-16 text-sm font-medium text-white">Ecógrafo en consulta</figcaption>
+            </figure>
+          </div>
         </div>
       </section>
 
@@ -251,9 +262,9 @@ function Home() {
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#e9e8dc] text-[#113f46]"><Phone size={17} aria-hidden="true" /></span>
                 <span data-testid="text-contact-phone">656 683 183</span>
               </a>
-              <a data-testid="link-contact-instagram" href="https://www.instagram.com/fisioplenitud/" target="_blank" rel="noreferrer" className="group flex items-center gap-3 text-sm font-semibold transition-colors hover:text-[#0b5961]" aria-label="Visitar Instagram de Plenitud">
+              <a data-testid="link-contact-instagram" href="https://www.instagram.com/fisio_plenitud/" target="_blank" rel="noreferrer" className="group flex items-center gap-3 text-sm font-semibold transition-colors hover:text-[#0b5961]" aria-label="Visitar Instagram de Plenitud">
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#e9e8dc] text-[#113f46]"><Instagram size={17} aria-hidden="true" /></span>
-                <span data-testid="text-contact-instagram">@fisioplenitud</span>
+                <span data-testid="text-contact-instagram">@fisio_plenitud</span>
               </a>
               <a data-testid="link-contact-address" href="https://maps.google.com/?q=Santiaho%20Heras%201%2C%20Los%20Palacios%20y%20Villafranca%2C%20Sevilla" target="_blank" rel="noreferrer" className="group flex items-start gap-3 text-sm leading-[1.7] transition-colors hover:text-[#0b5961]" aria-label="Ver dirección de Plenitud en el mapa">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#e9e8dc] text-[#113f46]"><MapPin size={17} aria-hidden="true" /></span>

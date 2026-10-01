@@ -34,7 +34,7 @@ function Home() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [preparedMessage, setPreparedMessage] = useState('');
   const [formFeedback, setFormFeedback] = useState('');
-  const whatsappMessage = preparedMessage || 'Hola, me gustaría consultar sobre fisioterapia y disponibilidad en la nueva clínica de Plenitud.';
+  const whatsappMessage = preparedMessage || 'Hola, me gustaría consultar información o pedir cita';
   const whatsappUrl = `https://wa.me/34656683183?text=${encodeURIComponent(whatsappMessage)}`;
 
   const closeMenu = () => setMenuOpen(false);
@@ -151,9 +151,9 @@ function Home() {
             </div>
             <div className="relative">
               <div className="absolute -left-4 -top-4 h-28 w-28 rounded-full bg-[#d9dfd0]" aria-hidden="true" />
-              <figure className="relative mx-auto aspect-[4/5] w-full max-w-[460px] overflow-hidden rounded-[1.5rem] bg-[#d9dfd0] lg:ml-auto">
-                <img src="/perfil-orla.jpg" alt="El fisioterapeuta trabaja con el ecógrafo; detrás se ven la orla universitaria y su título" loading="lazy" className="h-full w-full object-cover object-top" />
-                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/85 to-transparent px-6 pb-5 pt-16 text-sm font-medium text-white">Mi formación en Fisioterapia, presente en cada proceso.</figcaption>
+              <figure className="relative mx-auto aspect-[3/4] w-full max-w-[460px] overflow-hidden rounded-[1.5rem] bg-[#d9dfd0] lg:ml-auto">
+                <img src="/perfil-graduacion.jpg" alt="Retrato del fisioterapeuta de Plenitud con la beca académica de graduación" loading="lazy" className="h-full w-full object-cover object-top" />
+                <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/85 to-transparent px-6 pb-5 pt-16 text-sm font-medium text-white">Graduado en Fisioterapia por la Universidad de Cádiz.</figcaption>
               </figure>
             </div>
           </div>
@@ -176,16 +176,20 @@ function Home() {
               <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/90 via-[#113f46]/40 to-transparent px-6 pb-5 pt-16 text-sm font-medium text-white">Readaptación deportiva en el campo de entrenamiento.</figcaption>
             </figure>
           </div>
-          <div className="mt-6 grid gap-5 md:grid-cols-2 md:items-center">
-            <article className="rounded-[1.4rem] bg-[#e9e8dc] p-6 md:p-8">
+          <div className="mt-6 grid gap-5 md:grid-cols-[.95fr_1.05fr] md:items-stretch">
+            <article className="flex flex-col justify-center rounded-[1.4rem] bg-[#e9e8dc] p-6 md:p-8">
               <p className="eyebrow text-[#778b78]">Formación de base</p>
               <h3 className="font-display mt-4 text-2xl font-semibold tracking-[-.04em]">C.D. La Unión <span className="font-editorial font-medium italic text-[#8d6c21]">· 6 años</span></h3>
               <p className="mt-3 text-sm leading-[1.8] text-[#637268]">Cuidado, educación y prevención de lesiones en jóvenes durante su etapa de formación.</p>
             </article>
-            <div className="md:pl-4">
-              <p className="font-editorial text-[1.45rem] leading-[1.35] text-[#527061] md:text-[1.7rem]">Una visión práctica y orientada a resultados reales para deportistas y pacientes de cualquier disciplina.</p>
-              <a href="#servicios" className="text-link mt-5 inline-flex items-center gap-2 text-sm font-semibold">Conoce nuestros servicios <ArrowRight size={15} aria-hidden="true" /></a>
-            </div>
+            <figure className="relative aspect-[13/11] overflow-hidden rounded-[1.4rem] bg-[#d9dfd0]">
+              <img src="/cd-la-union-atencion.jpg" alt="El fisioterapeuta atiende a una joven jugadora en el campo durante su etapa en C.D. La Unión" loading="lazy" className="absolute inset-0 h-full w-full object-cover" />
+              <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/85 to-transparent px-6 pb-5 pt-16 text-sm font-medium text-white">Atención y prevención de lesiones en el campo.</figcaption>
+            </figure>
+          </div>
+          <div className="mt-7 flex flex-col gap-4 border-t border-[#113f46]/15 pt-7 md:flex-row md:items-end md:justify-between">
+            <p className="max-w-[760px] font-editorial text-[1.45rem] leading-[1.35] text-[#527061] md:text-[1.7rem]">Una visión práctica y orientada a resultados reales para deportistas y pacientes de cualquier disciplina.</p>
+            <a href="#servicios" className="text-link inline-flex shrink-0 items-center gap-2 text-sm font-semibold">Conoce nuestros servicios <ArrowRight size={15} aria-hidden="true" /></a>
           </div>
         </div>
       </section>
@@ -262,13 +266,13 @@ function Home() {
           </div>
           <div className="home-care-panel mt-16 overflow-hidden rounded-[1.5rem] border border-[#113f46]/10 md:mt-20">
             <div className="grid md:grid-cols-[.88fr_1.12fr]">
-              <div className="relative flex min-h-[270px] flex-col justify-between overflow-hidden bg-[#d9dfd0] p-7 md:min-h-[330px] md:p-10">
+              <div className="relative flex min-h-[420px] flex-col items-center justify-center gap-3 overflow-hidden bg-[#d9dfd0] p-5 md:min-h-[450px] md:p-6">
                 <div aria-hidden="true" className="care-rings absolute -right-16 -top-16 h-64 w-64 rounded-full border border-[#527061]/25"><div className="absolute inset-7 rounded-full border border-[#527061]/25" /><div className="absolute inset-14 rounded-full border border-[#527061]/25" /><div className="absolute inset-21 rounded-full border border-[#527061]/25" /></div>
-                <p className="eyebrow relative text-[#527061]">En casa, a tu ritmo</p>
-                <div className="relative flex items-end justify-between gap-4">
-                  <p className="max-w-[230px] font-editorial text-[2rem] leading-[1.08] text-[#31523f] md:text-[2.5rem]">La autonomía también se entrena.</p>
-                  <span aria-hidden="true" className="mb-1 flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#d8ab43] text-[#113f46]"><Footprints size={20} /></span>
-                </div>
+                <p className="eyebrow relative z-10 w-full max-w-[260px] text-[#527061]">En casa, a tu ritmo</p>
+                <figure className="relative z-10 w-full max-w-[260px] overflow-hidden rounded-[1.2rem] bg-[#fbf9f2] shadow-[0_16px_36px_rgba(32,61,50,.12)]">
+                  <img src="/domicilio-ejercicio.jpg" alt="Persona mayor realizando un ejercicio de fuerza con una mancuerna, acompañada por una fisioterapeuta" loading="lazy" className="block h-auto w-full" />
+                  <figcaption className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-[#113f46]/85 to-transparent px-4 pb-4 pt-12 text-xs font-medium text-white">Ejercicio de fuerza adaptado.</figcaption>
+                </figure>
               </div>
               <div className="bg-[#fbf9f2] p-7 md:p-10">
                 <p className="eyebrow mb-4 text-[#778b78]">Fisioterapia cercana</p>
@@ -371,7 +375,7 @@ function Home() {
               </a>
               <a data-testid="link-contact-whatsapp" href={whatsappUrl} target="_blank" rel="noreferrer" className="group flex items-center gap-3 text-sm font-semibold transition-colors hover:text-[#0b5961]" aria-label="Escribir a Plenitud por WhatsApp">
                 <span className="flex h-10 w-10 items-center justify-center rounded-full bg-[#e9e8dc] text-[#113f46]"><MessageCircle size={17} aria-hidden="true" /></span>
-                <span>Escribir por WhatsApp</span>
+                <span>Escribir por WhatsApp · 656 683 183</span>
               </a>
               <a data-testid="link-contact-address" href="https://maps.google.com/?q=Santiaho%20Heras%201%2C%20Los%20Palacios%20y%20Villafranca%2C%20Sevilla" target="_blank" rel="noreferrer" className="group flex items-start gap-3 text-sm leading-[1.7] transition-colors hover:text-[#0b5961]" aria-label="Ver dirección de Plenitud en el mapa">
                 <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#e9e8dc] text-[#113f46]"><MapPin size={17} aria-hidden="true" /></span>
